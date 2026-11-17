@@ -1,0 +1,91 @@
+.header {
+  height: 70px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menuBtn {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: var(--solgas-blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.menuBtn:hover {
+  color: var(--solgas-yellow);
+}
+
+.mobileLogo {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--solgas-blue);
+}
+
+.topNav {
+  display: flex;
+  gap: 24px;
+}
+
+.navLink {
+  color: var(--solgas-blue);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--solgas-yellow);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btnPrimary {
+  background-color: var(--solgas-yellow);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btnPrimary:hover {
+  background-color: var(--solgas-yellow-hover);
+}
+
+.btnLogin {
+  background: transparent;
+  color: var(--solgas-blue);
+  border: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 18px;
+}

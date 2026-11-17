@@ -1,0 +1,180 @@
+.main {
+  flex-grow: 1;
+  background-color: var(--solgas-gray);
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--solgas-blue) 0%, #004b99 100%);
+  color: white;
+  padding: 80px 32px 100px;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  background-color: var(--solgas-yellow);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: -60px auto 60px;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section, .faqSection {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.section h2, .faqSection h2 {
+  color: var(--solgas-blue);
+  font-size: 24px;
+  margin-bottom: 32px;
+  font-weight: 800;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.videoCard {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.videoCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--solgas-light-blue);
+  box-shadow: 0 10px 20px rgba(0,43,102,0.1);
+}
+
+.videoThumbnail {
+  background-color: #E2E8F0;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle, #CBD5E1 2px, transparent 2px);
+  background-size: 20px 20px;
+  position: relative;
+}
+
+.playIcon {
+  font-size: 32px;
+  color: var(--solgas-yellow);
+  background: white;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding-left: 6px;
+}
+
+.videoCard h3 {
+  padding: 24px 20px 8px;
+  font-size: 16px;
+  color: var(--solgas-blue);
+  font-weight: 800;
+}
+
+.videoCard p {
+  padding: 0 20px 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* FAQ */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faqItem {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faqQuestion {
+  padding: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background: var(--solgas-gray);
+  transition: all 0.2s;
+}
+
+.faqItem.active .faqQuestion {
+  background: var(--solgas-blue);
+  color: white;
+}
+
+.arrow {
+  transition: transform 0.3s;
+  font-size: 12px;
+}
+
+.faqItem.active .arrow {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: white;
+}
+
+.faqItem.active .faqAnswer {
+  max-height: 300px;
+}
+
+.faqAnswer p {
+  padding: 20px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}

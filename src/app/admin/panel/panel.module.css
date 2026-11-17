@@ -1,0 +1,161 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f1f5f9;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: var(--solgas-blue);
+  color: white;
+  padding: 24px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: var(--solgas-yellow);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav button {
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav button:hover, .nav button.active {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.panel {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.panelHeader h2 {
+  color: var(--solgas-blue);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 16px;
+  border-bottom: 2px solid #e2e8f0;
+  color: #64748b;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: var(--text-main);
+  font-size: 14px;
+}
+
+.badgeSuccess {
+  background: #dcfce7;
+  color: #166534;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badgeWarning {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.btnExport {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background: var(--solgas-yellow);
+  color: var(--solgas-blue);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btnToggle {
+  background: transparent;
+  border: 1px solid var(--solgas-blue);
+  color: var(--solgas-blue);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.btnToggle:hover {
+  background: var(--solgas-blue);
+  color: white;
+}
+
+.statusSelect {
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
+}
+
+.btnAction {
+  background: #f1f5f9;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
